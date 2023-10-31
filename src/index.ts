@@ -1,6 +1,7 @@
 import { createApp } from "vue";
+import 'uno.css'
 
-import YButton from "./button/JSXButton";
+import App from "./App.vue";
 // import SFCButton from './button/SFCButton.vue'
 
-createApp(YButton).mount("#app");
+createApp(App).mount("#app");
