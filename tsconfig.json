@@ -3,7 +3,15 @@
         "declaration": true, /* 生成相关的 '.d.ts' 文件。 */
         "declarationDir": "./dist/types", /* '.d.ts' 文件输出目录 */
         "jsx": "preserve",
-        "lib": ["es2018", "dom"], // fix: Cannot find global value 'Promise'
+        // fix: Cannot find global value 'Promise'
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "types": [
+            "vitest",
+            "vitest/globals"
+        ]
     },
     "include": [
         "./**/*.*",
@@ -13,5 +21,6 @@
         "node_modules"
     ],
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": "true"
+    "allowSyntheticDefaultImports": "true",
+    "allowImportingTsExtensions": "true"
 }

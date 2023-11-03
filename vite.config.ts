@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -31,5 +32,11 @@ export default defineConfig({
       formats: ["es", "umd", "iife"],
     },
   },
+
+  test: {
+    // 使用类似 jest 中的全局 API
+    globals: true,
+    environment: 'happy-dom'
+  }
 
 });
