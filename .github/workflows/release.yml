@@ -12,12 +12,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
-        with:
-          node-version: '18.16.0'
+      with:
+        node-version: '18.16.0'
     - uses: pnpm/action-setup@v2.1.0
       with:
         version: 8.10.0
-    - name: 安装依赖
-      run: pnpm install
+
+      run: pnpm install  - name: 安装依赖
     - name: 跑测试
       run: pnpm run test
