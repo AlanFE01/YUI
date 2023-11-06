@@ -6,7 +6,7 @@ import UnoCSS from 'unocss/vite'
 
 const rollupOptions = {
   // TODO: view rollup usage
-  external: ["vue", "vue-router"],
+  external: ["vue"],
   output: {
     globals: {
       vue: "Vue",
@@ -23,7 +23,9 @@ export default defineConfig({
   ],
   build: {
     rollupOptions,
-    minify: false,
+    minify: 'terser', // boolean | 'terser' | 'esbuild'
+    sourcemap: true, // 输出单独 source文件
+    cssCodeSplit: true,
     lib: {
       entry: "./src/entry.ts",
       name: "FishUI",
