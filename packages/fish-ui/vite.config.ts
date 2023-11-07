@@ -27,7 +27,7 @@ export default defineConfig({
     sourcemap: true, // 输出单独 source文件
     cssCodeSplit: true,
     lib: {
-      entry: "./src/entry.ts",
+      entry: "./entry.ts",
       name: "FishUI",
       fileName: "fish-ui",
       // 导出模块格式
@@ -40,5 +40,4 @@ export default defineConfig({
     globals: true,
     environment: 'happy-dom'
   }
-
 });

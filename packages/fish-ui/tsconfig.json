@@ -14,8 +14,8 @@
         ]
     },
     "include": [
-        "./**/*.*",
-        "./shims-vue.d.ts",
+        "./*.*",
+        "./shims-vue.d.ts", "src/entry.ts",
     ],
     "exclude": [
         "node_modules"

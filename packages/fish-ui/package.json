@@ -1,0 +1,26 @@
+{
+  "name": "@pkg/fish-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.3.7"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.21",
+    "@unocss/preset-icons": "^0.57.1",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "@vue/test-utils": "^2.4.1",
+    "happy-dom": "^12.10.3",
+    "terser": "^5.24.0",
+    "vitest": "^0.34.6"
+  }
+}

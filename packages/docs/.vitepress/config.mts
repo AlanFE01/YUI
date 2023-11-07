@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import vueJsx from '@vitejs/plugin-vue-jsx'
+
 import UnoCSS from 'unocss/vite'
 import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
 
